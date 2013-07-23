@@ -1,0 +1,1316 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>BCCatalog Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Brightcove iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Brightcove</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">BCCatalog Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/emitter">&nbsp;&nbsp;&nbsp;&nbsp;emitter</option>
+	
+	<option value="//api/name/mediaService">&nbsp;&nbsp;&nbsp;&nbsp;mediaService</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/catalogWithToken:">&nbsp;&nbsp;&nbsp;&nbsp;+ catalogWithToken:</option>
+	
+	<option value="//api/name/catalogWithToken:baseURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ catalogWithToken:baseURL:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/findPlaylistByID:options:callBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- findPlaylistByID:options:callBlock:</option>
+	
+	<option value="//api/name/findPlaylistByID:withObserver:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- findPlaylistByID:withObserver:selector:</option>
+	
+	<option value="//api/name/findPlaylistByReferenceID:options:callBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- findPlaylistByReferenceID:options:callBlock:</option>
+	
+	<option value="//api/name/findPlaylistByReferenceID:withObserver:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- findPlaylistByReferenceID:withObserver:selector:</option>
+	
+	<option value="//api/name/findVideoByID:options:callBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- findVideoByID:options:callBlock:</option>
+	
+	<option value="//api/name/findVideoByID:withObserver:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- findVideoByID:withObserver:selector:</option>
+	
+	<option value="//api/name/findVideoByReferenceID:options:callBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- findVideoByReferenceID:options:callBlock:</option>
+	
+	<option value="//api/name/findVideoByReferenceID:withObserver:selector:">&nbsp;&nbsp;&nbsp;&nbsp;- findVideoByReferenceID:withObserver:selector:</option>
+	
+	<option value="//api/name/initWithToken:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithToken:</option>
+	
+	<option value="//api/name/initWithToken:baseURL:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithToken:baseURL:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating the Catalog">Creating the Catalog</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Looking Up Videos">Looking Up Videos</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Looking Up Playlists">Looking Up Playlists</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Catalog Properties">Catalog Properties</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emitter">emitter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaService">mediaService</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/catalogWithToken:">catalogWithToken:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/catalogWithToken:baseURL:">catalogWithToken:baseURL:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findPlaylistByID:options:callBlock:">findPlaylistByID:options:callBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findPlaylistByID:withObserver:selector:">findPlaylistByID:withObserver:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findPlaylistByReferenceID:options:callBlock:">findPlaylistByReferenceID:options:callBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findPlaylistByReferenceID:withObserver:selector:">findPlaylistByReferenceID:withObserver:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findVideoByID:options:callBlock:">findVideoByID:options:callBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findVideoByID:withObserver:selector:">findVideoByID:withObserver:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findVideoByReferenceID:options:callBlock:">findVideoByReferenceID:options:callBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findVideoByReferenceID:withObserver:selector:">findVideoByReferenceID:withObserver:selector:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithToken:">initWithToken:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithToken:baseURL:">initWithToken:baseURL:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="BCCatalog Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">BCCatalog Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">BCCatalog.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The BCCatalog class provides asynchronous methods for retrieving information
+about videos and playlists from Brightcove’s Media API services.</p>
+
+<p>To accept a callback for the asynchronous API response, methods of BCCatalog
+implement the observer/selector pattern.  This pattern is commonly applied in
+Objective-C development to capture an object/method pair for later callback.</p>
+
+<p>Network requests such as those implemented by the BCCatalog class sometimes
+fail.  If the request succeeds, the observer’s selector will be invoked with
+nil for the first parameter and a <a href="../Classes/BCVideo.html">BCVideo</a> object for the second.  If an error
+occurs during the execution of the request, the specified observer’s selector
+will be invoked with an error object as the first parameter and nil as the
+second parameter.</p>
+
+<p>Only one request can be in-flight per BCCatalog at any point in time.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating the Catalog" name="task_Creating the Catalog"></a>
+						<h3 class="subsubtitle task-title">Creating the Catalog</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithToken:">&ndash;&nbsp;initWithToken:</a></code>
+		<span class="tooltip"><p>Designated initializer, returns a BCCatalog object initialized with the
+specified token.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithToken:baseURL:">&ndash;&nbsp;initWithToken:baseURL:</a></code>
+		<span class="tooltip"><p>Returns a BCCatalog object initialized with the specified token. The second
+argument specifies the URL of the media API to send requests to. If it is
+nil, <a href="https://api.brightcove.com/services/library">https://api.brightcove.com/services/library</a> is used.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/catalogWithToken:">+&nbsp;catalogWithToken:</a></code>
+		<span class="tooltip"><p>Factory initializer, returns a BCCatalog object initialized with the
+specified token.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/catalogWithToken:baseURL:">+&nbsp;catalogWithToken:baseURL:</a></code>
+		<span class="tooltip"><p>Factory initializer, returns a BCCatalog object initialized with the
+specified token. The second argument specifies the URL of the media API to
+send requests to. If it is nil, <a href="https://api.brightcove.com/services/library">https://api.brightcove.com/services/library</a>
+is used.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Looking Up Videos" name="task_Looking Up Videos"></a>
+						<h3 class="subsubtitle task-title">Looking Up Videos</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findVideoByID:options:callBlock:">&ndash;&nbsp;findVideoByID:options:callBlock:</a></code>
+		<span class="tooltip"><p>Retrieves a <a href="../Classes/BCVideo.html">BCVideo</a> from the Media API service by its video ID, then invokes
+the provided block.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findVideoByReferenceID:options:callBlock:">&ndash;&nbsp;findVideoByReferenceID:options:callBlock:</a></code>
+		<span class="tooltip"><p>Retrieves a <a href="../Classes/BCVideo.html">BCVideo</a> from the Media API service by its reference ID &mdash; a
+customer supplied unique identifier.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findVideoByID:withObserver:selector:">&ndash;&nbsp;findVideoByID:withObserver:selector:</a></code>
+		<span class="tooltip"><p>Retrieves a <a href="../Classes/BCVideo.html">BCVideo</a> from the Media API service by its video ID.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findVideoByReferenceID:withObserver:selector:">&ndash;&nbsp;findVideoByReferenceID:withObserver:selector:</a></code>
+		<span class="tooltip"><p>Retrieves a <a href="../Classes/BCVideo.html">BCVideo</a> from the Media API service by its reference ID&mdash;-a
+customer supplied unique identifier.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Looking Up Playlists" name="task_Looking Up Playlists"></a>
+						<h3 class="subsubtitle task-title">Looking Up Playlists</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findPlaylistByID:options:callBlock:">&ndash;&nbsp;findPlaylistByID:options:callBlock:</a></code>
+		<span class="tooltip"><p>Retrieves a <a href="../Classes/BCPlaylist.html">BCPlaylist</a> from the Media API service by its playlist ID.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findPlaylistByReferenceID:options:callBlock:">&ndash;&nbsp;findPlaylistByReferenceID:options:callBlock:</a></code>
+		<span class="tooltip"><p>Retrieves a <a href="../Classes/BCPlaylist.html">BCPlaylist</a> from the Media API service by its reference ID&mdash;-a
+customer supplied unique identifier.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findPlaylistByID:withObserver:selector:">&ndash;&nbsp;findPlaylistByID:withObserver:selector:</a></code>
+		<span class="tooltip"><p>Retrieves a <a href="../Classes/BCPlaylist.html">BCPlaylist</a> from the Media API service by its playlist ID.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findPlaylistByReferenceID:withObserver:selector:">&ndash;&nbsp;findPlaylistByReferenceID:withObserver:selector:</a></code>
+		<span class="tooltip"><p>Retrieves a <a href="../Classes/BCPlaylist.html">BCPlaylist</a> from the Media API service by its reference ID &mdash; a
+customer supplied unique identifier.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Catalog Properties" name="task_Catalog Properties"></a>
+						<h3 class="subsubtitle task-title">Catalog Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mediaService">&nbsp;&nbsp;mediaService</a></code>
+		<span class="tooltip"><p>The media service component used to manage Media API requests.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emitter">&nbsp;&nbsp;emitter</a></code>
+		<span class="tooltip"><p>The <a href="../Classes/BCEventEmitter.html">BCEventEmitter</a> used by the catalog.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/emitter" title="emitter"></a>
+	<h3 class="subsubtitle method-title">emitter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/BCEventEmitter.html">BCEventEmitter</a> used by the catalog.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) BCEventEmitter *emitter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mediaService" title="mediaService"></a>
+	<h3 class="subsubtitle method-title">mediaService</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The media service component used to manage Media API requests.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) BCMediaService *mediaService</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/catalogWithToken:" title="catalogWithToken:"></a>
+	<h3 class="subsubtitle method-title">catalogWithToken:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Factory initializer, returns a BCCatalog object initialized with the
+specified token.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)catalogWithToken:(NSString *)<em>token</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>string containing your Video Cloud Media API token.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an initialized BCCatalog</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>To prevent unauthorized access to the metadata in your account, Video Cloud
+protects access to the API with tokens that you pass as parameters when
+making API calls. Like other web-based APIs, tokens are generated for you by
+Video Cloud and protected by you.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/catalogWithToken:baseURL:" title="catalogWithToken:baseURL:"></a>
+	<h3 class="subsubtitle method-title">catalogWithToken:baseURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Factory initializer, returns a BCCatalog object initialized with the
+specified token. The second argument specifies the URL of the media API to
+send requests to. If it is nil, <a href="https://api.brightcove.com/services/library">https://api.brightcove.com/services/library</a>
+is used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)catalogWithToken:(NSString *)<em>token</em> baseURL:(id)<em>baseURL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>string containing your Video Cloud Media API token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>baseURL</em></dt>
+			<dd><p>the URL to prepend to all media API requests. Optional.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an initialized BCCatalog</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>To prevent unauthorized access to the metadata in your account, Video Cloud
+protects access to the API with tokens that you pass as parameters when
+making API calls. Like other web-based APIs, tokens are generated for you by
+Video Cloud and protected by you.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/findPlaylistByID:options:callBlock:" title="findPlaylistByID:options:callBlock:"></a>
+	<h3 class="subsubtitle method-title">findPlaylistByID:options:callBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a <a href="../Classes/BCPlaylist.html">BCPlaylist</a> from the Media API service by its playlist ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)findPlaylistByID:(NSString *)<em>playlistID</em> options:(NSDictionary *)<em>options</em> callBlock:(BCPlaylistResponseBlock)<em>responseBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>playlistID</em></dt>
+			<dd><p>string containing the ID of the playlist to find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>Additional NSString query parameters to add to the Media API
+requests. These values will override the default values if they conflict.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseBlock</em></dt>
+			<dd><p>block which will be invoked when the request finishes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findPlaylistByID:withObserver:selector:" title="findPlaylistByID:withObserver:selector:"></a>
+	<h3 class="subsubtitle method-title">findPlaylistByID:withObserver:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a <a href="../Classes/BCPlaylist.html">BCPlaylist</a> from the Media API service by its playlist ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)findPlaylistByID:(NSString *)<em>playlistID</em> withObserver:(id)<em>observer</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>playlistID</em></dt>
+			<dd><p>string containing the ID of the playlist to find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>observer</em></dt>
+			<dd><p>object registering as the observer for the asynchronous
+response&mdash;-must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>selector that specifies the message sent to the observer when
+a response is available.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Like all observer/selector methods of BCCatalog, this method will invoke the
+selector with an error object as the first parameter if an error occurred, or
+nil if the request succeeded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findPlaylistByReferenceID:options:callBlock:" title="findPlaylistByReferenceID:options:callBlock:"></a>
+	<h3 class="subsubtitle method-title">findPlaylistByReferenceID:options:callBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a <a href="../Classes/BCPlaylist.html">BCPlaylist</a> from the Media API service by its reference ID&mdash;-a
+customer supplied unique identifier.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)findPlaylistByReferenceID:(NSString *)<em>referenceID</em> options:(NSDictionary *)<em>options</em> callBlock:(BCPlaylistResponseBlock)<em>responseBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>referenceID</em></dt>
+			<dd><p>string containing the reference ID of the playlist to
+find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>Additional NSString query parameters to add to the Media API
+requests. These values will override the default values if they conflict.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseBlock</em></dt>
+			<dd><p>block which will be invoked when the request finishes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findPlaylistByReferenceID:withObserver:selector:" title="findPlaylistByReferenceID:withObserver:selector:"></a>
+	<h3 class="subsubtitle method-title">findPlaylistByReferenceID:withObserver:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a <a href="../Classes/BCPlaylist.html">BCPlaylist</a> from the Media API service by its reference ID &mdash; a
+customer supplied unique identifier.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)findPlaylistByReferenceID:(NSString *)<em>referenceID</em> withObserver:(id)<em>observer</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>referenceID</em></dt>
+			<dd><p>string containing the reference ID of the playlist to
+find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>observer</em></dt>
+			<dd><p>object registering as the observer for the asynchronous
+response &mdash; must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>selector that specifies the message sent to the observer when
+a response is available.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Like all observer/selector methods of BCCatalog, this method will invoke the
+selector with an error object as the first parameter if an error occurred, or
+nil if the request succeeded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findVideoByID:options:callBlock:" title="findVideoByID:options:callBlock:"></a>
+	<h3 class="subsubtitle method-title">findVideoByID:options:callBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a <a href="../Classes/BCVideo.html">BCVideo</a> from the Media API service by its video ID, then invokes
+the provided block.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)findVideoByID:(NSString *)<em>videoID</em> options:(NSDictionary *)<em>options</em> callBlock:(BCVideoResponseBlock)<em>responseBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoID</em></dt>
+			<dd><p>string containing the ID of the video to find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>Additional NSString query parameters to add to the Media API
+requests. These values will override the default values if they conflict.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseBlock</em></dt>
+			<dd><p>block which will be invoked when the request finishes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findVideoByID:withObserver:selector:" title="findVideoByID:withObserver:selector:"></a>
+	<h3 class="subsubtitle method-title">findVideoByID:withObserver:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a <a href="../Classes/BCVideo.html">BCVideo</a> from the Media API service by its video ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)findVideoByID:(NSString *)<em>videoID</em> withObserver:(id)<em>observer</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoID</em></dt>
+			<dd><p>string containing the ID of the video to find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>observer</em></dt>
+			<dd><p>object registering as the observer for the asynchronous
+response &mdash; must not be nil</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>selector that specifies the message sent to the observer when
+a response is available.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Like all observer/selector methods of BCCatalog, this method will invoke the
+selector with an error object as the first parameter if an error occurred, or
+nil if the request succeeded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findVideoByReferenceID:options:callBlock:" title="findVideoByReferenceID:options:callBlock:"></a>
+	<h3 class="subsubtitle method-title">findVideoByReferenceID:options:callBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a <a href="../Classes/BCVideo.html">BCVideo</a> from the Media API service by its reference ID &mdash; a
+customer supplied unique identifier.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)findVideoByReferenceID:(NSString *)<em>referenceID</em> options:(NSDictionary *)<em>options</em> callBlock:(BCVideoResponseBlock)<em>responseBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>referenceID</em></dt>
+			<dd><p>string containing the reference ID of the video to find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>Additional NSString query parameters to add to the Media API
+requests. These values will override the default values if they conflict.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseBlock</em></dt>
+			<dd><p>block which will be invoked when the request finishes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findVideoByReferenceID:withObserver:selector:" title="findVideoByReferenceID:withObserver:selector:"></a>
+	<h3 class="subsubtitle method-title">findVideoByReferenceID:withObserver:selector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves a <a href="../Classes/BCVideo.html">BCVideo</a> from the Media API service by its reference ID&mdash;-a
+customer supplied unique identifier.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)findVideoByReferenceID:(NSString *)<em>referenceID</em> withObserver:(id)<em>observer</em> selector:(SEL)<em>selector</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>referenceID</em></dt>
+			<dd><p>string containing the reference ID of the video to find.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>observer</em></dt>
+			<dd><p>object registering as the observer for the asynchronous
+response&mdash;-must not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd><p>selector that specifies the message sent to the observer when
+a response is available.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Like all observer/selector methods of BCCatalog, this method will invoke the
+selector with an error object as the first parameter if an error occurred, or
+nil if the request succeeded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithToken:" title="initWithToken:"></a>
+	<h3 class="subsubtitle method-title">initWithToken:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Designated initializer, returns a BCCatalog object initialized with the
+specified token.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithToken:(NSString *)<em>token</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>string containing your Video Cloud Media API token.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an initialized BCCatalog</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>To prevent unauthorized access to the metadata in your account, Video Cloud
+protects access to the API with tokens that you pass as parameters when
+making API calls. Like other web-based APIs, tokens are generated for you by
+Video Cloud and protected by you.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithToken:baseURL:" title="initWithToken:baseURL:"></a>
+	<h3 class="subsubtitle method-title">initWithToken:baseURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a BCCatalog object initialized with the specified token. The second
+argument specifies the URL of the media API to send requests to. If it is
+nil, <a href="https://api.brightcove.com/services/library">https://api.brightcove.com/services/library</a> is used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithToken:(NSString *)<em>token</em> baseURL:(NSString *)<em>baseURL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>string containing your Video Cloud Media API token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>baseURL</em></dt>
+			<dd><p>the URL to prepend to all media API requests. Optional.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an initialized BCCatalog</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>To prevent unauthorized access to the metadata in your account, Video Cloud
+protects access to the API with tokens that you pass as parameters when
+making API calls. Like other web-based APIs, tokens are generated for you by
+Video Cloud and protected by you.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCCatalog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Brightcove. All rights reserved. (Last updated: 2013-05-29)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

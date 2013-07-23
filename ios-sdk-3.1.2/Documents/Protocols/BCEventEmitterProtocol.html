@@ -1,0 +1,955 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>BCEventEmitterProtocol Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Brightcove iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Brightcove</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">BCEventEmitterProtocol Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/emit:">&nbsp;&nbsp;&nbsp;&nbsp;- emit:</option>
+	
+	<option value="//api/name/emit:thenCallBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- emit:thenCallBlock:</option>
+	
+	<option value="//api/name/emit:withDetails:">&nbsp;&nbsp;&nbsp;&nbsp;- emit:withDetails:</option>
+	
+	<option value="//api/name/emit:withDetails:thenCallBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- emit:withDetails:thenCallBlock:</option>
+	
+	<option value="//api/name/off:removeListener:">&nbsp;&nbsp;&nbsp;&nbsp;- off:removeListener:</option>
+	
+	<option value="//api/name/on:callBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- on:callBlock:</option>
+	
+	<option value="//api/name/once:callBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- once:callBlock:</option>
+	
+	<option value="//api/name/request:withDetails:responseBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- request:withDetails:responseBlock:</option>
+	
+	<option value="//api/name/respond:emit:withDetails:">&nbsp;&nbsp;&nbsp;&nbsp;- respond:emit:withDetails:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Adding and Removing Listeners">Adding and Removing Listeners</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Emitting Events">Emitting Events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Request-Reply Flow">Request-Reply Flow</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emit:">emit:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emit:thenCallBlock:">emit:thenCallBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emit:withDetails:">emit:withDetails:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emit:withDetails:thenCallBlock:">emit:withDetails:thenCallBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/off:removeListener:">off:removeListener:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/on:callBlock:">on:callBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/once:callBlock:">once:callBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/request:withDetails:responseBlock:">request:withDetails:responseBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/respond:emit:withDetails:">respond:emit:withDetails:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="BCEventEmitterProtocol Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">BCEventEmitterProtocol Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">BCEventEmitterProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Defines the interface for an event emitter that can receive and emit events.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Adding and Removing Listeners" name="task_Adding and Removing Listeners"></a>
+						<h3 class="subsubtitle task-title">Adding and Removing Listeners</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/on:callBlock:">&ndash;&nbsp;on:callBlock:</a></code>
+		<span class="tooltip"><p>Allows an object to add itself as a listener for a type of event by passing
+in a block to be invoked when an event of that type is emitted.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/once:callBlock:">&ndash;&nbsp;once:callBlock:</a></code>
+		<span class="tooltip"><p>Allows an object to add itself as a listener for a type of event by passing
+in a block to be invoked when an event of that type is emitted.  Immediately
+before invoking the block, the listener will be automatically removed,
+however an opaque object is still returned so the listener may be removed
+before it executes.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/off:removeListener:">&ndash;&nbsp;off:removeListener:</a></code>
+		<span class="tooltip"><p>Removes a listener from the list of listeners for the given type. If no
+previously added listener matches the parameters, calling this method has
+no effect.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="Emitting Events" name="task_Emitting Events"></a>
+						<h3 class="subsubtitle task-title">Emitting Events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emit:withDetails:thenCallBlock:">&ndash;&nbsp;emit:withDetails:thenCallBlock:</a></code>
+		<span class="tooltip"><p>Sends an event of the given type to all listeners for that type, passing
+through details object, which can be nil.  After all listeners have been
+invoked, the callback block is executed with the generated event.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emit:thenCallBlock:">&ndash;&nbsp;emit:thenCallBlock:</a></code>
+		<span class="tooltip"><p>Sends an event of the given type to all listeners for that type. After all
+listeners have been invoked, the callback block is executed with the
+generated event.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emit:withDetails:">&ndash;&nbsp;emit:withDetails:</a></code>
+		<span class="tooltip"><p>Sends an event of the given type to all listeners for that type, passing
+through details object, which can be nil.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emit:">&ndash;&nbsp;emit:</a></code>
+		<span class="tooltip"><p>Sends an event of the given type to all listeners for that type.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="Request-Reply Flow" name="task_Request-Reply Flow"></a>
+						<h3 class="subsubtitle task-title">Request-Reply Flow</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/request:withDetails:responseBlock:">&ndash;&nbsp;request:withDetails:responseBlock:</a></code>
+		<span class="tooltip"><p>Emits an event of the specified type with the associated details.  The
+emitter will listen for responses to this event and call the provided
+responseBlock when the first response is encountered.  Additional responses
+will be ignored.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/respond:emit:withDetails:">&ndash;&nbsp;respond:emit:withDetails:</a></code>
+		<span class="tooltip"><p>Emits an event of the specified type as a response to a previous event.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/emit:" title="emit:"></a>
+	<h3 class="subsubtitle method-title">emit:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends an event of the given type to all listeners for that type.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)emit:(NSString *)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to emit.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/BCEvent.html">BCEvent</a> object which was created for this emit.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emit:thenCallBlock:" title="emit:thenCallBlock:"></a>
+	<h3 class="subsubtitle method-title">emit:thenCallBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends an event of the given type to all listeners for that type. After all
+listeners have been invoked, the callback block is executed with the
+generated event.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)emit:(NSString *)<em>type</em> thenCallBlock:(BCCallbackBlock)<em>callbackBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to emit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callbackBlock</em></dt>
+			<dd><p>The callback to execute after all listeners have been
+called.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/BCEvent.html">BCEvent</a> object which was created for this emit.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emit:withDetails:" title="emit:withDetails:"></a>
+	<h3 class="subsubtitle method-title">emit:withDetails:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends an event of the given type to all listeners for that type, passing
+through details object, which can be nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)emit:(NSString *)<em>type</em> withDetails:(NSDictionary *)<em>details</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to emit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>details</em></dt>
+			<dd><p>Dictionary of additional details relevant to this event
+(may be nil).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/BCEvent.html">BCEvent</a> object which was created for this emit.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emit:withDetails:thenCallBlock:" title="emit:withDetails:thenCallBlock:"></a>
+	<h3 class="subsubtitle method-title">emit:withDetails:thenCallBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends an event of the given type to all listeners for that type, passing
+through details object, which can be nil.  After all listeners have been
+invoked, the callback block is executed with the generated event.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)emit:(NSString *)<em>type</em> withDetails:(NSDictionary *)<em>details</em> thenCallBlock:(BCCallbackBlock)<em>callbackBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to emit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>details</em></dt>
+			<dd><p>Dictionary of additional details relevant to this event
+(may be nil).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callbackBlock</em></dt>
+			<dd><p>The callback to execute after all listeners have been
+called.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/BCEvent.html">BCEvent</a> object which was created for this emit.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Be careful when using thenCallBlock in apps with manual memory
+management. Such blocks cannot be cancelled so all objects referenced within
+them must not be deallocated until all listeners have been notified and the
+block has run.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/off:removeListener:" title="off:removeListener:"></a>
+	<h3 class="subsubtitle method-title">off:removeListener:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a listener from the list of listeners for the given type. If no
+previously added listener matches the parameters, calling this method has
+no effect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)off:(NSString *)<em>type</em> removeListener:(id)<em>listener</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to listen for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>listener</em></dt>
+			<dd><p>The opaque object returned previously by the
+<a href="#//api/name/on:callBlock:">on:callBlock:</a> method.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/on:callBlock:" title="on:callBlock:"></a>
+	<h3 class="subsubtitle method-title">on:callBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows an object to add itself as a listener for a type of event by passing
+in a block to be invoked when an event of that type is emitted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)on:(NSString *)<em>type</em> callBlock:(BCCallbackBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to listen for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to invoke, should conform to the following signature:</p>
+
+<blockquote><p>void (^)(<a href="../Classes/BCEvent.html">BCEvent</a> *)</p></blockquote></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns an opaque object which can be used to remove the listener
+later through the off:type:removeListener method.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> The caller of this method is responsible for ensuring that
+<a href="#//api/name/off:removeListener:">[BCEventEmitterProtocol off:removeListener:]</a> is called before any of the
+objects referenced in block are deallocated.</p></div><div class="warning"><p><strong>Warning:</strong> Once the listeners for a given event begin, all listeners will run,
+so it is not possible to use <a href="#//api/name/off:removeListener:">[BCEventEmitterProtocol off:removeListener:]</a> to
+prevent a registered listener from executing. Do not invalidate application
+state needed by multiple listeners until all listeners who rely on that state
+have finished executing. For example, if two event listeners are registered
+for <code>BCEventVideoDidEnd</code> and the first listener deallocates an object needed
+in the second listener, an EXC_BAD_ACCESS will occur.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/once:callBlock:" title="once:callBlock:"></a>
+	<h3 class="subsubtitle method-title">once:callBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows an object to add itself as a listener for a type of event by passing
+in a block to be invoked when an event of that type is emitted.  Immediately
+before invoking the block, the listener will be automatically removed,
+however an opaque object is still returned so the listener may be removed
+before it executes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)once:(NSString *)<em>type</em> callBlock:(BCCallbackBlock)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to listen for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to invoke, should conform to the following signature:</p>
+
+<blockquote><p>void (^)(<a href="../Classes/BCEvent.html">BCEvent</a> *)</p></blockquote></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns an opaque object which can be used to remove the listener
+later through the off:type:removeListener method.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> The caller of this method is responsible for ensuring that
+<a href="#//api/name/off:removeListener:">[BCEventEmitterProtocol off:removeListener:]</a> is called before any of the
+objects referenced in block are deallocated.</p></div><div class="warning"><p><strong>Warning:</strong> Once the listeners for a given event begin, all listeners will run,
+so it is not possible to use <a href="#//api/name/off:removeListener:">[BCEventEmitterProtocol off:removeListener:]</a> to
+prevent a registered listener from executing. Do not invalidate application
+state needed by multiple listeners until all listeners who rely on that state
+have finished executing. For example, if two event listeners are registered
+for <code>BCEventVideoDidEnd</code> and the first listener deallocates an object needed
+in the second listener, an EXC_BAD_ACCESS will occur.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/request:withDetails:responseBlock:" title="request:withDetails:responseBlock:"></a>
+	<h3 class="subsubtitle method-title">request:withDetails:responseBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Emits an event of the specified type with the associated details.  The
+emitter will listen for responses to this event and call the provided
+responseBlock when the first response is encountered.  Additional responses
+will be ignored.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)request:(NSString *)<em>type</em> withDetails:(NSDictionary *)<em>details</em> responseBlock:(BCCallbackBlock)<em>responseBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to emit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>details</em></dt>
+			<dd><p>Dictionary of additional details relevant to this event. Must
+not be nil since this is used to determine the matching response Event.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseBlock</em></dt>
+			<dd><p>The block of code to invoke when a response Event is
+received.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/respond:emit:withDetails:" title="respond:emit:withDetails:"></a>
+	<h3 class="subsubtitle method-title">respond:emit:withDetails:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Emits an event of the specified type as a response to a previous event.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)respond:(BCEvent *)<em>event</em> emit:(NSString *)<em>type</em> withDetails:(NSDictionary *)<em>details</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>event</em></dt>
+			<dd><p>The Event which is being responded to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of Event to emit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>details</em></dt>
+			<dd><p>Dictionary of additional details relevant to this event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCEventEmitterProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Brightcove. All rights reserved. (Last updated: 2013-05-29)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

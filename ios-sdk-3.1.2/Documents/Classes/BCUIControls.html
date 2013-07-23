@@ -1,0 +1,1119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>BCUIControls Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Brightcove iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Brightcove</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">BCUIControls Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/controlsView">&nbsp;&nbsp;&nbsp;&nbsp;controlsView</option>
+	
+	<option value="//api/name/duration">&nbsp;&nbsp;&nbsp;&nbsp;duration</option>
+	
+	<option value="//api/name/durationLabel">&nbsp;&nbsp;&nbsp;&nbsp;durationLabel</option>
+	
+	<option value="//api/name/fullScreenButton">&nbsp;&nbsp;&nbsp;&nbsp;fullScreenButton</option>
+	
+	<option value="//api/name/playPauseButton">&nbsp;&nbsp;&nbsp;&nbsp;playPauseButton</option>
+	
+	<option value="//api/name/progressBar">&nbsp;&nbsp;&nbsp;&nbsp;progressBar</option>
+	
+	<option value="//api/name/progressLabel">&nbsp;&nbsp;&nbsp;&nbsp;progressLabel</option>
+	
+	<option value="//api/name/volumeView">&nbsp;&nbsp;&nbsp;&nbsp;volumeView</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/formatTime:">&nbsp;&nbsp;&nbsp;&nbsp;- formatTime:</option>
+	
+	<option value="//api/name/initWithEventEmitter:andView:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithEventEmitter:andView:</option>
+	
+	<option value="//api/name/onFullScreen:">&nbsp;&nbsp;&nbsp;&nbsp;- onFullScreen:</option>
+	
+	<option value="//api/name/onPlayPause:">&nbsp;&nbsp;&nbsp;&nbsp;- onPlayPause:</option>
+	
+	<option value="//api/name/onSliderBegin:">&nbsp;&nbsp;&nbsp;&nbsp;- onSliderBegin:</option>
+	
+	<option value="//api/name/onSliderChange:">&nbsp;&nbsp;&nbsp;&nbsp;- onSliderChange:</option>
+	
+	<option value="//api/name/onSliderEnd:">&nbsp;&nbsp;&nbsp;&nbsp;- onSliderEnd:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating the Component">Creating the Component</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Component Properties">Component Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_UI Event Handlers">UI Event Handlers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Other Methods">Other Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controlsView">controlsView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/duration">duration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/durationLabel">durationLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fullScreenButton">fullScreenButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playPauseButton">playPauseButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/progressBar">progressBar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/progressLabel">progressLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/volumeView">volumeView</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/formatTime:">formatTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithEventEmitter:andView:">initWithEventEmitter:andView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onFullScreen:">onFullScreen:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onPlayPause:">onPlayPause:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onSliderBegin:">onSliderBegin:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onSliderChange:">onSliderChange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onSliderEnd:">onSliderEnd:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="BCUIControls Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">BCUIControls Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/BCComponent.html">BCComponent</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">BCUIControls.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A visual component with standard video playback controls.</p>
+
+<h3>Allowed to Emit</h3>
+
+<p>This component may emit the following events:</p>
+
+<ul>
+<li>BCEventHideControls &ndash; to respond by hiding the controls</li>
+<li>BCEventShowControls &ndash; to respond by showing the controls</li>
+<li>BCEventVideoProgress &ndash; to respond by advancing the slider</li>
+<li>BCEventVideoDidPlay &ndash; to respond by setting the play/pause button state</li>
+<li>BCEventPaused &ndash; to respond by setting the play/pause button state</li>
+<li>BCEventVideoDidEnd &ndash; to respond by setting the play/pause button state</li>
+<li>BCEventSetVideo &ndash; to respond by resetting the slider and time display</li>
+</ul>
+
+
+<h3>Allowed Listeners</h3>
+
+<p>This component may listen for the following events:</p>
+
+<ul>
+<li>BCEventPlay &ndash; to indicate that playback should begin or resume</li>
+<li>BCEventPause &ndash; to indicate that playback should halt</li>
+<li>BCEventSeekTo &ndash; to indicate where the play head should seek to</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating the Component" name="task_Creating the Component"></a>
+						<h3 class="subsubtitle task-title">Creating the Component</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithEventEmitter:andView:">&ndash;&nbsp;initWithEventEmitter:andView:</a></code>
+		<span class="tooltip"><p>Designated initializer. Initializes the component with the given emitter and view.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Component Properties" name="task_Component Properties"></a>
+						<h3 class="subsubtitle task-title">Component Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/controlsView">&nbsp;&nbsp;controlsView</a></code>
+		<span class="tooltip"><p>The UIView containing the controls.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playPauseButton">&nbsp;&nbsp;playPauseButton</a></code>
+		<span class="tooltip"><p>The UIButton that emits play and pause events when clicked.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/volumeView">&nbsp;&nbsp;volumeView</a></code>
+		<span class="tooltip"><p>The MPVolumeView that brings up the AirPlay chooser when clicked.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fullScreenButton">&nbsp;&nbsp;fullScreenButton</a></code>
+		<span class="tooltip"><p>The UIButton that emits setFullScreen events when clicked.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/progressBar">&nbsp;&nbsp;progressBar</a></code>
+		<span class="tooltip"><p>UISlider that tracks the video progress. Also allows scrubbing.
+Scrubbing emits a seekTo event.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/progressLabel">&nbsp;&nbsp;progressLabel</a></code>
+		<span class="tooltip"><p>UILabel that displays formatted time of current video position.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/durationLabel">&nbsp;&nbsp;durationLabel</a></code>
+		<span class="tooltip"><p>UILabel that displays formatted time of <a href="#//api/name/duration">duration</a> of video.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/duration">&nbsp;&nbsp;duration</a></code>
+		<span class="tooltip"><p>The duration of the current item.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="UI Event Handlers" name="task_UI Event Handlers"></a>
+						<h3 class="subsubtitle task-title">UI Event Handlers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onFullScreen:">&ndash;&nbsp;onFullScreen:</a></code>
+		<span class="tooltip"><p>Called internally when the fullscreen button is clicked.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onPlayPause:">&ndash;&nbsp;onPlayPause:</a></code>
+		<span class="tooltip"><p>Called internally when the play/pause button is clicked. Emits either BCEventPlay
+or BCEventPause depending on its internal state.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onSliderBegin:">&ndash;&nbsp;onSliderBegin:</a></code>
+		<span class="tooltip"><p>Called internally when user starts interacting with slider.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onSliderChange:">&ndash;&nbsp;onSliderChange:</a></code>
+		<span class="tooltip"><p>Called internally when the slider value changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onSliderEnd:">&ndash;&nbsp;onSliderEnd:</a></code>
+		<span class="tooltip"><p>Called internally when the slider is released.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Other Methods" name="task_Other Methods"></a>
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/formatTime:">&ndash;&nbsp;formatTime:</a></code>
+		<span class="tooltip"><p>Formats time in seconds to a readable string in the form of mm:ss.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/controlsView" title="controlsView"></a>
+	<h3 class="subsubtitle method-title">controlsView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIView containing the controls.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIView *controlsView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="subsubtitle method-title">duration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The duration of the current item.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CMTime duration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/durationLabel" title="durationLabel"></a>
+	<h3 class="subsubtitle method-title">durationLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UILabel that displays formatted time of <a href="#//api/name/duration">duration</a> of video.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UILabel *durationLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fullScreenButton" title="fullScreenButton"></a>
+	<h3 class="subsubtitle method-title">fullScreenButton</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIButton that emits setFullScreen events when clicked.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIButton *fullScreenButton</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playPauseButton" title="playPauseButton"></a>
+	<h3 class="subsubtitle method-title">playPauseButton</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIButton that emits play and pause events when clicked.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIButton *playPauseButton</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/progressBar" title="progressBar"></a>
+	<h3 class="subsubtitle method-title">progressBar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UISlider that tracks the video progress. Also allows scrubbing.
+Scrubbing emits a seekTo event.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UISlider *progressBar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/progressLabel" title="progressLabel"></a>
+	<h3 class="subsubtitle method-title">progressLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UILabel that displays formatted time of current video position.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UILabel *progressLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/volumeView" title="volumeView"></a>
+	<h3 class="subsubtitle method-title">volumeView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The MPVolumeView that brings up the AirPlay chooser when clicked.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet MPVolumeView *volumeView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/formatTime:" title="formatTime:"></a>
+	<h3 class="subsubtitle method-title">formatTime:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Formats time in seconds to a readable string in the form of mm:ss.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)formatTime:(float)<em>time</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>time</em></dt>
+			<dd><p>The time to format.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns the formatted time as a string.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithEventEmitter:andView:" title="initWithEventEmitter:andView:"></a>
+	<h3 class="subsubtitle method-title">initWithEventEmitter:andView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Designated initializer. Initializes the component with the given emitter and view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithEventEmitter:(id&lt;BCEventEmitterProtocol&gt;)<em>eventEmitter</em> andView:(UIView *)<em>viewValue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>eventEmitter</em></dt>
+			<dd><p>The upstream event emitter through which events will be
+emitted and listened for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewValue</em></dt>
+			<dd><p>The view into which this component will render itself.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onFullScreen:" title="onFullScreen:"></a>
+	<h3 class="subsubtitle method-title">onFullScreen:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called internally when the fullscreen button is clicked.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)onFullScreen:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The originator of the UI event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onPlayPause:" title="onPlayPause:"></a>
+	<h3 class="subsubtitle method-title">onPlayPause:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called internally when the play/pause button is clicked. Emits either BCEventPlay
+or BCEventPause depending on its internal state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)onPlayPause:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The originator of the UI event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onSliderBegin:" title="onSliderBegin:"></a>
+	<h3 class="subsubtitle method-title">onSliderBegin:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called internally when user starts interacting with slider.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)onSliderBegin:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The originator of the UI event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onSliderChange:" title="onSliderChange:"></a>
+	<h3 class="subsubtitle method-title">onSliderChange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called internally when the slider value changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)onSliderChange:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The originator of the UI event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onSliderEnd:" title="onSliderEnd:"></a>
+	<h3 class="subsubtitle method-title">onSliderEnd:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called internally when the slider is released.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (IBAction)onSliderEnd:(id)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>The originator of the UI event.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BCUIControls.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Brightcove. All rights reserved. (Last updated: 2013-05-29)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
